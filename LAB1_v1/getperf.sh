@@ -1,6 +1,6 @@
 #!/bin/bash
 MIN=10
-MAX=300
+MAX=50
 STEP=10
 COUNT=$MIN
 LineCount=1
@@ -11,7 +11,7 @@ while [ $COUNT -le $MAX ]; do
 	let COUNT=COUNT+STEP
 done
 
-input="./data.txt"
+input="./sample_data.txt"
 while IFS= read -r line
 do
   let rem=($LineCount%2)
@@ -32,7 +32,7 @@ do
 done < "$input"
 
 #! code for ploting data
-for FILE in processed.csv; do
+for FILE in sample_processed.csv; do
 gnuplot -p << EOF
 set datafile separator ","
 set xlabel "matrix size"
