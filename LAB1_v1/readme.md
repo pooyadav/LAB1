@@ -1,5 +1,16 @@
 ## This is version 1 of initial mmp.c program.  
 
+Here there are two main pragrams. One is getperf.sh script which just automates the execution of mmp in a loop so you can get time of a program when that is run with different parameters.
+
+Second is mmp.c which is a c program doing matrix multiplication, which is modified version of the last week program.
+
+The steps you need to do:
+
+You first compile mmp.c 
+$ gcc mmp.c -o mmp
+
+Now you can open 
+
 You can run 
 $ ./getperf.sh to plot the execution time result of the mmp.c 
 
