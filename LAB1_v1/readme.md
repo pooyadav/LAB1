@@ -7,21 +7,19 @@ Second is mmp.c which is a c program doing matrix multiplication, which is modif
 The steps you need to do:
 
 You first compile mmp.c 
-$ gcc mmp.c -o mmp
+(1) $ gcc mmp.c -o mmp
 
-Now you can open 
+(2) You can run this script.
 
-You can run 
-$ ./getperf.sh to plot the execution time result of the mmp.c 
+$ ./getperf.sh 
 
-Please note that before running getperf script, 
-
-compile mmp.c 
-
-$ gcc mmp.c -o mmp
+This script does three things: 
+First get execution time ./mmp program and put that in data.txt file. Second, it format the input data file ( for ilustration  this script takes sample_data.txt) and third, take processed file from previous step ( for ilustration  this script takes, sample_processed) and  and plot a graph. 
 
 
-Also, open mmp.c and getperf.sh to see what this program and script are doing and think how you can change the program to improve the execution time performance of mmp.c
+Also, open mmp.c and getperf.sh to see what this program and script are doing and think how you can change the program to improve the execution time performance of mmp.c, use learning from Lecture 4, use fork (), exec () and wait ().
+
+(Optional) If you are intrested, you can also plot your own generated data in the gerperf command, by replacing sample_data.txt by your data.txt and modifying the code (line 14-31).
 
 
 Next task (with sync) with our lecture 4 of SYS2, create new processes using fork command in the mmp.c and investigate how does a new process work and how much each fork command has an impact on kernel execution time and  the total time.
