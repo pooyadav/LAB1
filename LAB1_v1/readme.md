@@ -17,7 +17,11 @@ This script does three things:
 First get execution time ./mmp program and put that in data.txt file. Second, it format the input data file ( for ilustration  this script takes sample_data.txt) and third, take processed file from previous step ( for ilustration  this script takes, sample_processed) and  and plot a graph. 
 
 
-Also, open mmp.c and getperf.sh to see what this program and script are doing and think how you can change the program to improve the execution time performance of mmp.c, use learning from Lecture 4, use fork (), exec () and wait ().
+Also, open mmp.c and getperf.sh to see what this program and script are doing and think how you can change the program to improve the execution time performance of mmp.c. Please understand what header files are used for which purpose? For example, understand how time is calculated and used. 
+
+By running getperf.sh, we are learning how new processes started by just calling a utility funtion in the bash script.
+
+Please note: you are not expected to learn details of bash script programming but we use this example to demonstrate that simple shell commands can be called in a batch mode. Please investigate what is pstree structure of these commands.
 
 (Optional) If you are intrested, you can also plot your own generated data in the gerperf command, by replacing sample_data.txt by your data.txt and modifying the code (line 14-31).
 
