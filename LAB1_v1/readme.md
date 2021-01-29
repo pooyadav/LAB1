@@ -33,8 +33,17 @@ Please note: you are not expected to learn details of bash script programming bu
 
 (Optional) If you are intrested, you can also plot your own generated data by the gerperf script, see sample code and data scripts in processing folder in this directory.
 
+<<<<<<< HEAD
 
 Next week task -  with our lecture 4 of SYS2, create new processes using fork command in the mmp.c and investigate how does a new process work and how much each fork command has an impact on kernel execution time and  on the total time.
+
+Further, understand what is needed to optimise this program.
+
+And discuss with your group members. Please post your suggestions or questions on VLE discussion forums for feedback, suggestions and peer-learning activity.
+=======
+
+Next week task -  with our lecture 4 of SYS2, create new processes using fork command in the mmp.c and investigate how does a new process work and how much each fork command has an impact on kernel execution time and  on the total time.
+>>>>>>> ead18bec6be000080773184c73c00fb7d8340640
 
 Further, understand what is needed to optimise this program.
 

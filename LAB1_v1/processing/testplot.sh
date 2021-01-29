@@ -1,6 +1,6 @@
 #!/bin/bash
 MAX=300
-for FILE in processed.csv; do
+for FILE in sample_processed.csv; do
 gnuplot -p << EOF
 set datafile separator ","
 set xlabel "matrix size"
