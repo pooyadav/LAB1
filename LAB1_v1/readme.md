@@ -23,7 +23,6 @@ By running getperf.sh, we are learning how new processes started by just calling
 
 Please note: you are not expected to learn details of bash script programming but we use this example to demonstrate that simple shell commands can be called in a batch mode. Please investigate what is pstree structure of these commands.
 
-(Optional) If you are intrested, you can also plot your own generated data in the gerperf command, by replacing sample_data.txt by your data.txt and modifying the code (line 14-31).
 
 
 Next task (with sync) with our lecture 4 of SYS2, create new processes using fork command in the mmp.c and investigate how does a new process work and how much each fork command has an impact on kernel execution time and  the total time.
