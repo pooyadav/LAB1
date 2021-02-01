@@ -4,13 +4,12 @@
 
    Let's start with a simple_fork.c program in LAB1_week4 repo, take 10 mins to do this.
 
-   
-
    Compile and execute the program, and investigate what you found. 
 
-   gcc simple_fork.c -o simple_fork
+  ''' gcc simple_fork.c -o simple_fork
 
    ./simple_fork
+   '''
 
    1. How many print statements? Did you see print statements are repeated?
 
