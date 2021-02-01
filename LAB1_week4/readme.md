@@ -5,23 +5,25 @@
    Let's start with a simple_fork.c program in LAB1_week4 repo, take 10 mins to do this.
 
    Compile and execute the program, and investigate what you found. 
-
-  ''' gcc simple_fork.c -o simple_fork
+```
+   gcc simple_fork.c -o simple_fork
 
    ./simple_fork
-   '''
+ ```
 
    1. How many print statements? Did you see print statements are repeated?
 
    2. If you execute the program again, what do you find? Is the sequence of the print is same or different? Why is the sequence of statements different?
 
-   3. Did you see if " The parent process of the current process is 1 "? 
+   3. Did you see if ```The parent process of the current process is 1 ```? 
 
    4. What will happen when you move 
 
+      ```
       printf("The main process %d \n",pid_main);
 
       printf("The parent process of the current process is %d \n",getppid());
+      ```
 
       before 'return_pid = fork();'
 
@@ -31,7 +33,7 @@
 
    6. You can restrict what lines will be executed by a child process by including 
 
-      if(return_pid == 0){
+     ``` if(return_pid == 0){
 
       //instructions that you only child process to execute.
 
@@ -43,7 +45,7 @@
 
       //instructions that you only parent process to execute.
 
-      }
+      }```
 
    7. uncomment  these two lines in else 
 
