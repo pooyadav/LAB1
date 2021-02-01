@@ -33,7 +33,7 @@
 
    6. You can restrict what lines will be executed by a child process by including 
 
-     ``` if(return_pid == 0){
+     if(return_pid == 0){
 
       //instructions that you only child process to execute.
 
@@ -45,9 +45,9 @@
 
       //instructions that you only parent process to execute.
 
-      }```
+      }
 
-   7. uncomment  these two lines in else 
+   7. Uncomment  these two lines in the else block,
 
         // terminated_child_pid = wait(NULL);
 
@@ -55,11 +55,11 @@
 
       and compile and execute again. Do you still find parent of a process is 1 in any printf?
 
-   8. you can use " sleep(100);  " // introduces 100 ms delay, you can use this delay to control the active time of child or parent process to understand behaviour better.
+   8. You can use " sleep(100);  " // introduces 100 ms delay, you can use this delay to control the active time of child or parent process to understand behaviour better.
 
    9. If a parent did not invoke wait() and instead terminated, thereby leaving its child processes as orphans. Traditional UNIX systems addressed this scenario by assigning the initprocess as the new
 
-      parent to orphan processes. (as you see case of orphan process in your case when child process showes parent 1.)
+      parent to orphan processes. (as you see  in our case the orphan process is created when child process showed parent as 1.)
 
    
 
