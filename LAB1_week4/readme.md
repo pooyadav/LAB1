@@ -28,7 +28,7 @@
 
    5. How can you make the first child process created by this statement "return_pid = fork();" a zombie process? 
 
-   ​       A zombie process is a process that has terminated, but whose parent has not yet called wait(), is known as a zombie process. 
+   ​       A zombie process is a process that has terminated, but whose parent has not yet called wait()(may be parent process is still executing), is known as a zombie process. 
 
    6. You can restrict what lines will be executed by a child process by including 
 
@@ -54,11 +54,11 @@
 
       and compile and execute again. Do you still find parent of a process is 1 in any printf?
 
-   8. you can use " sleep(100);  " // introduces 100 ms delay, you can use this delay to control the active time of child or parent process to understand behaviour better.
+   8. you can use " sleep(1);  " // introduces 1 s delay, you can use this delay to control the active time of child or parent process to understand behaviour better.
 
-   9. If a parent did not invoke wait() and instead terminated, thereby leaving its child processes as orphans. Traditional UNIX systems addressed this scenario by assigning the initprocess as the new
+   9. If a parent did not invoke wait() and instead terminated, thereby leaving its child processes as orphans. Traditional UNIX systems addressed this scenario by assigning the init process as the new
 
-      parent to orphan processes. (as you see case of orphan process in your case when child process showes parent 1.)
+      parent to orphan processes. (as you see case of orphan process in your case when child process showed parent 1.)
 
    
 

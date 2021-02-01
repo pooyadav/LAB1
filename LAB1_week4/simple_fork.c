@@ -29,8 +29,8 @@ if(return_pid == 0)
 else
 {
     //printf("I am the main parent process");
-    terminated_child_pid = wait(NULL);
-    printf("The terminated child %d \n", terminated_child_pid); 
+    //terminated_child_pid = wait(NULL);
+    //printf("The terminated child %d \n", terminated_child_pid); 
 }
 
 
