@@ -1,4 +1,4 @@
-1. In the week-4 online session, we focus on lecture 4 and 5, process management and IPC and next week session will be focusing on 5 and 6 (IPC and thread scheduling).
+In the week-4 online session, we focus on lecture 4 and 5, process management and IPC and next week session will be focusing on 5 and 6 (IPC and thread scheduling).
 
    This session will be working on solidifying our knowledge in process creation, and process termination and will discuss many concepts such as zombie and orphan processes in a bit of details. So this should be seen as an extended session of lecture 4 and lecture 5.
 
