@@ -1,4 +1,4 @@
-Week 5: In this week we are learning about shared memory, inter-process communication and pipes in processes. POSIX Shared Memory (taken from Silbersharz Book, chapter 3, page, 132. 
+Week 5: In this week we are learning about shared memory, inter-process communication and pipes in processes. POSIX Shared Memory (taken from Silbersharz Book, chapter 3, page - 132). 
 Several IPC mechanisms are available for POSIX systems, including shared memory and message passing. Here, we explore the POSIX API for shared
 memory. POSIX shared memory is organized using memory-mapped files, which associate the region of shared memory with a file. A process must first create
 a shared-memory object using the shm_open() system call, as follows:
