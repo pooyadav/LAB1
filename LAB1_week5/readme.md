@@ -1,4 +1,21 @@
-Week 5: In this week we are learning about shared memory, inter-process communication and pipes in processes. POSIX Shared Memory (taken from Silbersharz Book, chapter 3, page - 132). 
+Week 5: In this week we are learning about shared memory, inter-process communication and pipes in processes.
+
+Let's start with a shared_memory.c program in LAB1_week5 repo, take 10 mins to do this.
+
+Compile and execute the program, and investigate what you found.
+
+   gcc shared_memory.c -o shared_memory
+
+   ./shared_memory
+   
+   1. Observe what output you found printed on the command terminal.
+   2. Understand what this program is doing? Did you observe child process able to read parent process data?
+   3. What will happen if you move ``child_return = fork();'' after ``ftruncate(shm_fd, SIZE);''?
+   4. Why do you think ``ptr1 = mmap(0, SIZE, PROT_READ, MAP_SHARED, shm_fd, 0);'' (line 31) is needed in child process.
+  
+
+
+POSIX Shared Memory (taken from Silbersharz Book, chapter 3, page - 132). 
 Several IPC mechanisms are available for POSIX systems, including shared memory and message passing. Here, we explore the POSIX API for shared
 memory. POSIX shared memory is organized using memory-mapped files, which associate the region of shared memory with a file. A process must first create
 a shared-memory object using the shm_open() system call, as follows:
@@ -51,7 +68,7 @@ So in this lab sessions, we'll learn following concepts.
 We will be using   #include <sys/mman.h> header files or devices into memory. mmap() creates a new mapping in the virtual address space of the calling process. Read about this is here: https://man7.org/linux/man-pages/man2/mmap.2.html, however, we will be looking on virtual memory management in the course a bit later.
 
 
-       
+
        
       
 
