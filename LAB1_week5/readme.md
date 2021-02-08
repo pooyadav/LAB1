@@ -4,9 +4,9 @@ Let's start with a shared_memory.c program in LAB1_week5 repo, take 10 mins to d
 
 Compile and execute the program, and investigate what you found.
 
-   gcc shared_memory.c -o shared_memory
+   `gcc shared_memory.c -o shared_memory
 
-   ./shared_memory
+   ./shared_memory`
    
    1. Observe what output you found printed on the command terminal.
    2. Understand what this program is doing? Did you observe child process able to read parent process data?
@@ -19,15 +19,33 @@ Let's start with a simple_pipe.c program in LAB1_week5 repo, take 10 mins to do 
 
 Compile and execute the program, and investigate what you found.
 
-   gcc simple_pipe.c -o simple_pipe
+   `gcc simple_pipe.c -o simple_pipe`
 
-   ./simple_pipe
+   `./simple_pipe`
    
    1. Observe what output you found printed on the command terminal.
    2. Understand what this program is doing? Did you observe child process able to read parent process data?
    3. Think about the communication happening through pipe, is it unidirectional/bidirectional? Is it half-duplex or full duplex? Discuss with your group, and report your understanding in the main room.
    4. Think what will happen if another new child process also reads the pipe, create a new child process and report your understanding.
    5. What will happen to pipe if parent process terminates before child process reads the pipe? Find out if this is an ordinary or a named pipe.
+   
+Now you have understood, how you can create a pipe between parent-child processes, now lets have a look on named pipes.
+
+Let's start with a writer.c  and reader.c program in LAB1_week5 repo, take 10 mins to do this.
+
+Compile and execute the program, and investigate what you found.
+
+`gcc writer.c -o writer`
+`gcc reader.c -o reader`
+
+Now open another terminal, and run
+`./writer` on one terminal and `.\reader` on another terminal,  (make sure in both terminal you are in right path (repo or directory) so your terminal can find both execuatable files.
+
+1. Observe what output you found printed on the command terminal. Type some message on terminal 1 and 2 and see what you observed.
+2. Think about how you can modify the behaviour of the program. 
+
+
+Now think, how you can apply these IPC mechanishms in your matrix multiplication program? What things you need to do first? Discuss with your group members and group mentor.
    
 
 ### Useful Reading
@@ -79,10 +97,11 @@ So in this lab sessions, we'll learn following concepts.
 
 (4) What synchronisation mechanishms are needed  for this shared memory area to be used properly (we will be looking synchronisation in more details later sessions based on week 5 and 6 material.)
 
-(5) How to avoid some of the data sharing issues and still achieve paralleslism using threads.
-
+(5) How you can use pipe for communicating between two different processes.
 
 We will be using   #include <sys/mman.h> header files or devices into memory. mmap() creates a new mapping in the virtual address space of the calling process. Read about this is here: https://man7.org/linux/man-pages/man2/mmap.2.html, however, we will be looking on virtual memory management in the course a bit later.
+
+
 
 
 
