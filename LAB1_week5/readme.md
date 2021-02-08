@@ -8,6 +8,11 @@ Compile and execute the program, and investigate what you found.
 
    ./shared_memory`
    
+  If you get compile error like this 'undefined reference to `shm_unlink''
+  then compile with -lrt flag as:
+   `gcc shared_memory.c -o shared_memory -lrt
+   
+   
    1. Observe what output you found printed on the command terminal.
    2. Understand what this program is doing? Did you observe child process able to read parent process data?
    3. What will happen if you move `child_return = fork(); after ftruncate(shm_fd, SIZE);`?
