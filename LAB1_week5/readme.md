@@ -40,13 +40,13 @@ Compile and execute the program, and investigate what you found.
 `gcc reader.c -o reader`
 
 Now open another terminal, and run
-`./writer` on one terminal and `.\reader` on another terminal,  (make sure in both terminal you are in right path (repo or directory) so your terminal can find both execuatable files.
+`./writer` on one terminal and `.\reader` on another terminal,  (make sure in both terminal you are in right path (repo or directory) so your terminal can find both execuatable files).
 
 1. Observe what output you found printed on the command terminal. Type some message on terminal 1 and 2 and see what you observed.
 2. Think about how you can modify the behaviour of the program. 
 
 
-Now think, how you can apply these IPC mechanishms in your matrix multiplication program? What things you need to do first? Discuss with your group members and group mentor.
+Now think how you can apply these IPC mechanishms in your matrix multiplication program? What things you need to do first? Discuss with your group members and group mentor.
    
 
 ### Useful Reading
