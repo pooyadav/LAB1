@@ -101,6 +101,8 @@ So in this lab sessions, we'll learn following concepts.
 
 We will be using   #include <sys/mman.h> header files or devices into memory. mmap() creates a new mapping in the virtual address space of the calling process. Read about this is here: https://man7.org/linux/man-pages/man2/mmap.2.html, however, we will be looking on virtual memory management in the course a bit later.
 
+Read about mkfifo here: https://man7.org/linux/man-pages/man3/mkfifo.3.html
+
 
 
 
