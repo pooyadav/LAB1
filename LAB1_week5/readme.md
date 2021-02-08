@@ -10,8 +10,8 @@ Compile and execute the program, and investigate what you found.
    
    1. Observe what output you found printed on the command terminal.
    2. Understand what this program is doing? Did you observe child process able to read parent process data?
-   3. What will happen if you move ``child_return = fork(); after ftruncate(shm_fd, SIZE);''?
-   4. Why do you think ``ptr1 = mmap(0, SIZE, PROT_READ, MAP_SHARED, shm_fd, 0); (line 31) is needed in child process.
+   3. What will happen if you move `child_return = fork(); after ftruncate(shm_fd, SIZE);`?
+   4. Why do you think `ptr1 = mmap(0, SIZE, PROT_READ, MAP_SHARED, shm_fd, 0); `(line 31) is needed in child process.
   
 
 
