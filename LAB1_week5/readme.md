@@ -36,6 +36,7 @@ Let's start with a writer.c  and reader.c program in LAB1_week5 repo, take 10 mi
 Compile and execute the program, and investigate what you found.
 
 `gcc writer.c -o writer`
+
 `gcc reader.c -o reader`
 
 Now open another terminal, and run
