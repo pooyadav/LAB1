@@ -1,4 +1,4 @@
-Week 5: In this week we are learning about shared memory, inter-process communication and pipes in processes.
+Week 5: In this week we are learning about inter-process communication using shared memory and pipes in processes. 
 
 Let's start with a shared_memory.c program in LAB1_week5 repo, take 10 mins to do this.
 
@@ -11,9 +11,26 @@ Compile and execute the program, and investigate what you found.
    1. Observe what output you found printed on the command terminal.
    2. Understand what this program is doing? Did you observe child process able to read parent process data?
    3. What will happen if you move `child_return = fork(); after ftruncate(shm_fd, SIZE);`?
-   4. Why do you think `ptr1 = mmap(0, SIZE, PROT_READ, MAP_SHARED, shm_fd, 0); `(line 31) is needed in child process.
-  
+   4. Why do you think `ptr1 = mmap(0, SIZE, PROT_READ, MAP_SHARED, shm_fd, 0); `(line 36) is needed in child process.
+   
+Now you have understood, how you can create share memory between parent-child processes, now lets have a look on interprocess communication through pipes.
 
+Let's start with a simple_pipe.c program in LAB1_week5 repo, take 10 mins to do this.
+
+Compile and execute the program, and investigate what you found.
+
+   gcc simple_pipe.c -o simple_pipe
+
+   ./simple_pipe
+   
+   1. Observe what output you found printed on the command terminal.
+   2. Understand what this program is doing? Did you observe child process able to read parent process data?
+   3. Think about the communication happening through pipe, is it unidirectional/bidirectional? Is it half-duplex or full duplex? Discuss with your group, and report your understanding in the main room.
+   4. Think what will happen if another new child process also reads the pipe, create a new child process and report your understanding.
+   5. What will happen to pipe if parent process terminates before child process reads the pipe? Find out if this is an ordinary or a named pipe.
+   
+
+### Useful Reading
 
 POSIX Shared Memory (taken from Silbersharz Book, chapter 3, page - 132). 
 Several IPC mechanisms are available for POSIX systems, including shared memory and message passing. Here, we explore the POSIX API for shared
