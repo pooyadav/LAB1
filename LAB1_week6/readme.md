@@ -8,7 +8,8 @@ Compile and execute the program, and investigate what you found.
 
 `gcc simple_threads.c -o simple_threads`
 
-If you get error like "undefined reference to `pthread_create'" then compile with flag -lpthread.
+If you get error like "undefined reference to `pthread_create`" then compile with flag -lpthread.
+
 `gcc simple_threads.c -o simple_threads -lpthread`
 
 `./simple_threads  10`
