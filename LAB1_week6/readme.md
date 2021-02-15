@@ -32,9 +32,7 @@ This program creates two new threads in the main program, observe following.
 
    //printf("Main Thread: %d\n", pthread_self() );
 
-   and compile and execute the program to see what you observed as an output.
-
-
+   and compile and execute the program to see what did you  observe as an output.
 
 So this give you a bit of idea how to create and manage threads. There are hundreds of thread management  functions described in  `pthread.h`, so have a look on those.
 
