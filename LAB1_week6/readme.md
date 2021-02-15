@@ -37,6 +37,8 @@ This program creates two new threads in the main program, observe following.
 So this give you a bit of idea how to create and manage threads. There are hundreds of thread management  functions described in  `pthread.h`, so have a look on those.
 
 I have created another `threads_attribute.c` for you all, lets quickly have a look on how to use these features so we have a better understanding of threads.
+If you get lots of warning in compilation, than compile with 
+`gcc threads_attribute.c -o threads_attribute -lpthread -D_GNU_SO `
 
 For using compiler  concurrency optimization, we can use `omp.h`, see the `simple_openmp.c` to see how pragma are defined.
 
