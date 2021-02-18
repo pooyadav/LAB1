@@ -26,7 +26,7 @@ This program creates two new threads in the main program, observe following.
 
 4. Comment this line in the  increment function - printf("counter: %d, sum: %d \n", i, sum);  (line 45) and compile program again and execute again, with different command line arguments, such as 10, then 100, 1000, 10000, 100000. See what sum value is printed on the screen. Repeat execution few times and find if you see any difference in the sum?
 
-5. How many threads do you think this simple_threads executable have? Find out by ncomment sleep(100); in both increment and decrement function and compile and execute for any value of command argument. Open another terminal and see running threads by`ps -M <pid>` on macOS or `ps -T -p <pid>` on Linux.  You can use <PID>printed on terminal by the main program.
+5. How many threads do you think this simple_threads executable have? Find out by uncommenting sleep(100); in both increment and decrement function and compile and execute for any value of command argument. Open another terminal and see running threads by`ps -M <pid>` on macOS or `ps -T -p <pid>` on Linux.  You can use <PID>printed on terminal by the main program.
 
 6. Uncomment `printf("Main Thread: %d\n", pthread_self() );' in the main program (line 21), in increment function  and decrement, both //printf("Child-1 PID: %d\n", getpid());
 

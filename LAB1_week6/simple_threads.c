@@ -45,7 +45,7 @@ sum += 1;
 printf("counter: %d, sum: %d \n", i, sum);
 }
 //printf("Child-1 PID: %d\n", getpid());
-//printf("Main Thread: 0x%.8x %.8x\n", pthread_self() );
+//printf("Main Thread: %d\n", pthread_self() );
 //sleep(100);
 pthread_exit(0);
 }
@@ -56,7 +56,7 @@ int i, upper = atoi(param);
 for (i = 1; i <= upper; i++)
 sum -= 1;
 //printf("Child-2  PID: %d\n", getpid());
-//printf("Main Thread: 0x%.8x %.8x\n", pthread_self() );
+//printf("Main Thread: %d\n", pthread_self() );
 //sleep(100);
 pthread_exit(0);
 }
