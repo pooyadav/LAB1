@@ -8,13 +8,13 @@ In this lab we will learn, how to create and initialise mutex variables and see 
 
 Lets start with `simple_mutex.c` and it will take your 15 mins to download, compile, execute and analyse this program.
 
-gcc simple_mutex.c -o simple_mutex
+`gcc simple_mutex.c -o simple_mutex`
 
 If you get error like "undefined reference to pthread_create" then compile with flag -lpthread.
 
-gcc simple_mutex.c -o simple_mutex -lpthread
+`gcc simple_mutex.c -o simple_mutex -lpthread`
 
-./simple_mutex 10
+`./simple_mutex 10`
 
 Please note this program takes a command line argument, for example, 10 as specified in the above line. The argument is just a value of counter, so you change the number if you like.
 
@@ -29,9 +29,9 @@ Execute program with different command line arguments, such as 10, then 100, 100
 
 Now lets start with  `simple_condition_need.c` and it will take your 10 mins to download, compile, execute and analyse this program, start with compiling and executing the program.
 
-gcc simple_condition_need.c -o simple_condition_need -lpthread
+`gcc simple_condition_need.c -o simple_condition_need -lpthread`
 
-./simple_condition_need 10
+`./simple_condition_need 10`
 
 please observe following.
 
@@ -48,9 +48,9 @@ In the next program we look on Condition variables that provide another way for 
 
 Now lets start with  `simple_condition.c` and it will take your 10 mins to download, compile, execute and analyse this program; start with compiling and executing the program.
 
-gcc simple_condition.c -o simple_condition -lpthread
+`gcc simple_condition.c -o simple_condition -lpthread`
 
-./simple_condition 10
+`./simple_condition 10`
 
 1. Observe what output did you find that is printed on the commandline terminal.
 
