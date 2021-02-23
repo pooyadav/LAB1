@@ -83,7 +83,7 @@ void *increment(void *param)
         }
         pthread_mutex_unlock (&mutexsum);
 
-        printf("counter: %d, sum: %d \n", i, sum);
+        printf("increment: %d, sum: %d \n", i, sum);
     }
     //printf("Child-1 PID: %d\n", getpid());
     //printf("Main Thread: 0x%.8x %.8x\n", pthread_self() );
@@ -94,15 +94,21 @@ void *increment(void *param)
 void *decrement(void *param)
 {
     int i, upper = atoi(param);
-    for (i = 1; i <= upper; i++)
+    i=1;
+
+    
+    while (i <= upper)
     {
-        pthread_mutex_lock (&mutexsum);
-        if (sum <= 0)
-        {
-           pthread_cond_wait(&cond1sum, &mutexsum);
+           pthread_mutex_lock (&mutexsum);
+           if(sum <=0)
+           {
+            pthread_cond_wait(&cond1sum, &mutexsum); 
+           }
            sum -= 1;
-        }
-        pthread_mutex_unlock (&mutexsum);
+           printf("decrement: %d, sum: %d \n", i, sum);
+           i = i+1;
+           pthread_mutex_unlock (&mutexsum);
+          
     }
     //printf("Child-2  PID: %d\n", getpid());
     //printf("Main Thread: 0x%.8x %.8x\n", pthread_self() );

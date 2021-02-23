@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
     /*printf("Main Thread: %d\n", pthread_self() ); */
     
     pthread_mutex_init(&mutexsum, NULL); /*initialise mutex*/
+    printf("mutexsum %zi",mutexsum);
+    
     
     if(argc < 2)
     { 
@@ -73,9 +75,8 @@ void *increment(void *param)
     {
         pthread_mutex_lock (&mutexsum);
         sum += 1;
+        printf("increment: %d, sum: %d \n", i, sum);
         pthread_mutex_unlock (&mutexsum);
-
-        printf("counter: %d, sum: %d \n", i, sum);
     }
     //printf("Child-1 PID: %d\n", getpid());
     //printf("Main Thread: 0x%.8x %.8x\n", pthread_self() );
@@ -93,6 +94,7 @@ void *decrement(void *param)
         {
             sum -= 1;
         }
+        printf("decrement: %d, sum: %d \n", i, sum);
         pthread_mutex_unlock (&mutexsum);
     }
     //printf("Child-2  PID: %d\n", getpid());
